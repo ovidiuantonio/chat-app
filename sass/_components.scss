@@ -1,0 +1,229 @@
+.phone {
+  flex: 0 0 33rem;
+  position: relative;
+  z-index: 2;
+  margin-right: 15rem;
+
+  @media only screen and (max-width: 1200px) {
+    margin-right: 0;
+    width: 33rem;
+  }
+
+  &__notch {
+    width: 15rem;
+    height: 3rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    background-color: $white;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 10;
+  }
+
+  &__app {
+    position: relative;
+    margin: 1rem 1rem;
+    width: calc(100% - 2rem);
+    height: 63rem;
+    border-radius: 4rem;
+    border: 1.5rem solid $white;
+    background-color: $app-background;
+    box-shadow: 0 1rem 2rem rgba(black, 0.1);
+    overflow: hidden;
+
+    &-top {
+      background-image: linear-gradient(
+        to right,
+        $Light-Violet,
+        $Light-Magenta
+      );
+      width: 100%;
+      height: 8rem;
+      padding: 2rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.1);
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 4;
+
+      &-content {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+      }
+    }
+
+    &-user {
+      display: flex;
+      margin-right: auto;
+      align-items: center;
+    }
+
+    &-chatbox {
+      width: calc(100% - 2rem);
+      margin-left: 1rem;
+      background-color: $white;
+      border-radius: 5rem;
+      height: 4rem;
+      border: none;
+      padding-left: 1.5rem;
+      position: absolute;
+      bottom: 1rem;
+
+      font-family: "Rubik", sans-serif;
+      color: $paragraph;
+      font-size: 1rem;
+
+      &::placeholder {
+        font-family: "Rubik", sans-serif;
+        color: $placeholder-text;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.user-image-holder {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 1rem;
+}
+
+.user-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid $white;
+  box-sizing: content-box;
+}
+
+.settings {
+  color: $white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.arrow {
+  color: $white;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dog-pics {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dog-photo {
+  width: 4rem;
+  height: auto;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.option {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to right, $Light-Magenta, $Light-Violet);
+  width: 75%;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.select:checked ~ .option__title::after {
+  background-color: $white;
+}
+
+.option__title {
+  position: relative;
+  margin-left: 1.5rem;
+
+  &::after {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid $radio-button-outline;
+    position: absolute;
+    top: -0.3rem;
+    left: -3rem;
+  }
+}
+
+.chatbox-button {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: $submit-button-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: $white;
+  position: absolute;
+  bottom: 1.4rem;
+  right: 1.6rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $Light-Violet;
+  }
+}
+
+.purple-thing {
+  width: 50rem;
+  height: 75vh;
+  background-image: linear-gradient(
+    to top right,
+    $Light-Violet,
+    $Light-Magenta
+  );
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: translateX(-25rem);
+  position: absolute;
+  z-index: -1;
+
+  animation: 3s ease-in infinite movePurple;
+}
+
+.grey-thing {
+  width: 50rem;
+  height: 75vh;
+  background-color: $app-background;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  top: calc(100% - 75vh);
+  right: 0;
+
+  @media only screen and (max-width: 600px) {
+    top: calc(100% - 50vh);
+  }
+
+  @media only screen and (max-width: 1200px) {
+    bottom: -30vh;
+  }
+
+  position: absolute;
+  z-index: -1;
+
+  animation: 3s ease-in infinite moveGrey;
+}

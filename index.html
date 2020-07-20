@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <div class="purple-thing"></div>
+    <div class="grey-thing"></div>
+    <div class="container">
+      <div class="phone">
+        <div class="phone__notch"></div>
+        <div class="phone__app">
+          <div class="phone__app-top">
+            <div class="phone__app-top-content">
+              <div class="arrow">&lsaquo;</div>
+              <div class="phone__app-user">
+                <div class="user-image-holder">
+                  <img src="images/avatar.jpg" alt="" class="user-image" />
+                </div>
+                <div class="phone__app-user-data">
+                  <h1 class="username">Samuel Green</h1>
+                  <p class="desc">Available to Walk</p>
+                </div>
+              </div>
+              <div class="settings">&vellip;</div>
+            </div>
+          </div>
+
+          <div class="phone__app-chat">
+            <p class="message-left message m1">
+              That sounds great. I’d be happy with that.
+            </p>
+            <p class="message-left message m2">
+              Could you send over some pictures of your dog, please?
+            </p>
+
+            <div class="dog-pics message m3">
+              <img src="images/dog-image-1.jpg" alt="" class="dog-photo" />
+              <img src="images/dog-image-2.jpg" alt="" class="dog-photo" />
+              <img src="images/dog-image-3.jpg" alt="" class="dog-photo" />
+            </div>
+
+            <p class="message-right message m4">
+              Here are a few pictures. She’s a happy girl!
+            </p>
+            <p class="message-right message m5">Can you make it?</p>
+
+            <p class="message-left message m6">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+
+            <form action="/" class="options">
+              <div class="option option-1 message m7">
+                <input type="radio" class="select" name="radio" id="30min" />
+                <label for="30min" class="option__title">30 minute walk</label>
+                <p class="option__price">$29</p>
+              </div>
+
+              <div class="option option-1 message m8">
+                <input type="radio" class="select" name="radio" id="1h" />
+                <label for="1h" class="option__title">1 hour walk</label>
+                <p class="option__price">$49</p>
+              </div>
+            </form>
+
+            <form action="/" class="chat">
+              <input
+                type="text"
+                class="phone__app-chatbox"
+                placeholder="Type a message..."
+              />
+              <button class="chatbox-button">&rsaquo;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="text">
+        <h1 class="title">Simple booking</h1>
+        <p class="paragraph">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

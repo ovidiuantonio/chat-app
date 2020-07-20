@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+.username {
+  color: rgba($white, 0.9);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.desc {
+  color: rgba($white, 0.5);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.message-left {
+  font-size: 1rem;
+  color: $chat-left;
+  font-weight: 400;
+  margin-left: 1rem;
+  width: 60%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba($placeholder-text, 0.2);
+  border-radius: 2rem;
+  border-bottom-left-radius: 0;
+  line-height: 1.4;
+}
+
+.message-right {
+  font-size: 1rem;
+  color: $chat-right;
+  font-weight: 400;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 1rem;
+  max-width: 60%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba($white, 0.9);
+  border-radius: 2rem;
+  border-bottom-right-radius: 0;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(black, 0.1);
+}
+
+.option {
+  &__title {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  &__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $white;
+    margin-right: 0.5rem;
+  }
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 500;
+  color: $main-heading;
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 4rem;
+  }
+}
+
+.paragraph {
+  font-size: 2rem;
+  color: $paragraph;
+  line-height: 1.5;
+  max-width: 60rem;
+}

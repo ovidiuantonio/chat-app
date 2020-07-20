@@ -1,0 +1,91 @@
+.m {
+  &1 {
+    animation: messagePop ease 1s;
+  }
+
+  &2 {
+    animation: messagePop ease 1s;
+    animation-delay: 1s;
+  }
+
+  &3 {
+    animation: messagePop ease 1s;
+    animation-delay: 2s;
+  }
+
+  &4 {
+    animation: messagePop ease 1s;
+    animation-delay: 3s;
+  }
+
+  &5 {
+    animation: messagePop ease 1s;
+    animation-delay: 4s;
+  }
+
+  &6 {
+    animation: messagePop ease 1s;
+    animation-delay: 5s;
+  }
+
+  &7 {
+    animation: messagePop ease 1s;
+    animation-delay: 6s;
+  }
+
+  &8 {
+    animation: messagePop ease 1s;
+    animation-delay: 7s;
+  }
+
+  &1,
+  &2,
+  &3,
+  &4,
+  &5,
+  &6,
+  &7,
+  &8 {
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes messagePop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes movePurple {
+  0% {
+    transform: translate(-15rem, 0);
+  }
+
+  50% {
+    transform: translate(-15rem, -1rem);
+  }
+
+  100% {
+    transform: translate(-15rem, 0);
+  }
+}
+
+@keyframes moveGrey {
+  0% {
+    transform: translate(15rem, 0);
+  }
+
+  50% {
+    transform: translate(15rem, 1rem);
+  }
+
+  100% {
+    transform: translate(15rem, 0);
+  }
+}
