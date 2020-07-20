@@ -543,7 +543,7 @@ body {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   top: calc(100% - 75vh);
-  right: 0;
+  right: -15rem;
   position: absolute;
   z-index: -1;
   -webkit-animation: 3s ease-in infinite moveGrey;
